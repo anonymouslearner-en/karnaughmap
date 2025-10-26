@@ -1,5 +1,130 @@
 @import "tailwindcss";
 
+/* Customizing my theme */
+@import "tailwindcss";
+
+/* Myriad Pro Font Family Definition */
+@theme {
+  /* Font Family */
+  --font-myriad: "Myriad Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+
+  /* Typography Scale - Headers */
+  /* H1 - Bold */
+  --font-size-h1: 2.5rem;
+  --line-height-h1: 3rem;
+  --font-weight-h1: 700;
+  --letter-spacing-h1: -0.02em;
+
+  /* H2 - Semibold */
+  --font-size-h2: 2rem;
+  --line-height-h2: 2.5rem;
+  --font-weight-h2: 600;
+  --letter-spacing-h2: -0.01em;
+
+  /* H3 - Subheadline */
+  --font-size-h3: 1.5rem;
+  --line-height-h3: 2rem;
+  --font-weight-h3: 500;
+  --letter-spacing-h3: 0;
+
+  /* Body Text Styles */
+  /* Body Large */
+  --font-size-body-lg: 1.125rem;
+  --line-height-body-lg: 1.75rem;
+  --font-weight-body-lg: 400;
+
+  /* Body Regular */
+  --font-size-body: 1rem;
+  --line-height-body: 1.5rem;
+  --font-weight-body: 400;
+
+  /* Body Small */
+  --font-size-body-sm: 0.875rem;
+  --line-height-body-sm: 1.25rem;
+  --font-weight-body-sm: 400;
+
+  /* Caption Styles */
+  /* Caption Regular */
+  --font-size-caption: 0.75rem;
+  --line-height-caption: 1rem;
+  --font-weight-caption: 400;
+  --letter-spacing-caption: 0.01em;
+
+  /* Caption Small */
+  --font-size-caption-sm: 0.625rem;
+  --line-height-caption-sm: 0.875rem;
+  --font-weight-caption-sm: 400;
+  --letter-spacing-caption-sm: 0.02em;
+}
+
+/* Utility Classes */
+@layer utilities {
+  /* Header Styles */
+  .text-h1 {
+    font-family: var(--font-myriad);
+    font-size: var(--font-size-h1);
+    line-height: var(--line-height-h1);
+    font-weight: var(--font-weight-h1);
+    letter-spacing: var(--letter-spacing-h1);
+  }
+
+  .text-h2 {
+    font-family: var(--font-myriad);
+    font-size: var(--font-size-h2);
+    line-height: var(--line-height-h2);
+    font-weight: var(--font-weight-h2);
+    letter-spacing: var(--letter-spacing-h2);
+  }
+
+  .text-h3 {
+    font-family: var(--font-myriad);
+    font-size: var(--font-size-h3);
+    line-height: var(--line-height-h3);
+    font-weight: var(--font-weight-h3);
+    letter-spacing: var(--letter-spacing-h3);
+  }
+
+  /* Body Text Styles */
+  .text-body-lg {
+    font-family: var(--font-myriad);
+    font-size: var(--font-size-body-lg);
+    line-height: var(--line-height-body-lg);
+    font-weight: var(--font-weight-body-lg);
+  }
+
+  .text-body {
+    font-family: var(--font-myriad);
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
+    font-weight: var(--font-weight-body);
+  }
+
+  .text-body-sm {
+    font-family: var(--font-myriad);
+    font-size: var(--font-size-body-sm);
+    line-height: var(--line-height-body-sm);
+    font-weight: var(--font-weight-body-sm);
+  }
+
+  /* Caption Styles */
+  .text-caption {
+    font-family: var(--font-myriad);
+    font-size: var(--font-size-caption);
+    line-height: var(--line-height-caption);
+    font-weight: var(--font-weight-caption);
+    letter-spacing: var(--letter-spacing-caption);
+  }
+
+  .text-caption-sm {
+    font-family: var(--font-myriad);
+    font-size: var(--font-size-caption-sm);
+    line-height: var(--line-height-caption-sm);
+    font-weight: var(--font-weight-caption-sm);
+    letter-spacing: var(--letter-spacing-caption-sm);
+  }
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
